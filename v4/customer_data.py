@@ -1,6 +1,6 @@
 from langchain_community.document_loaders.csv_loader import CSVLoader
 from langchain_openai import OpenAIEmbeddings
-from langchain.vectorstores.chroma import Chroma
+from langchain_chroma import Chroma
 
 file_path = (
    "./customers-1000.csv"

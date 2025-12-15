@@ -1,4 +1,4 @@
-# v2:  LangChain with GPT 3.5 Turbo
+# v2:  LangChain with GPT 5 Nano
 
 This version of the application use the LangChain framework, which provides many features and benefits that we'll use in 
 later iterations of the application. 
@@ -34,7 +34,7 @@ export OTEL_SERVICE_NAME=my-llm-app
 export OTEL_RESOURCE_ATTRIBUTES='deployment.environment=test'
 
 # run the application
-splunk-py-trace flask run -p 8080
+opentelemetry-instrument flask run -p 8080
 ````
 
 ## Test the Application

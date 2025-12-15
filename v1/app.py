@@ -13,7 +13,7 @@ def ask_question():
     question = data.get('question')
 
     completion = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model="gpt-5-nano",
         messages=[
             {"role": "user", "content": question}
         ]

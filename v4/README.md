@@ -41,7 +41,7 @@ export OTEL_RESOURCE_ATTRIBUTES='deployment.environment=test'
 python3 customer_data.py
 
 # now we can run the application that uses embeddings to answer questions 
-splunk-py-trace flask run -p 8080
+opentelemetry-instrument flask run -p 8080
 ````
 
 ## Test the Application

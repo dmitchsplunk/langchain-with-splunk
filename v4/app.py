@@ -6,13 +6,13 @@ from langchain_core.chat_history import (
 )
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_openai import OpenAIEmbeddings
-from langchain.vectorstores.chroma import Chroma
+from langchain_chroma import Chroma
 from flask import Flask, request
 from opentelemetry.instrumentation.langchain import LangchainInstrumentor
 
 app = Flask(__name__)
 LangchainInstrumentor().instrument()
-model = ChatOpenAI(model="gpt-3.5-turbo")
+model = ChatOpenAI(model="gpt-5-nano")
 
 embeddings_model = OpenAIEmbeddings()
 

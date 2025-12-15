@@ -1,4 +1,4 @@
-# v1:  OpenAI with GPT 3.5 Turbo
+# v1:  OpenAI with GPT 5 Nano
 
 This version of the application is a simple Python app that uses OpenAI with GPT 3.5 Turbo to answer questions. 
 
@@ -34,7 +34,7 @@ export OTEL_SERVICE_NAME=my-llm-app
 export OTEL_RESOURCE_ATTRIBUTES='deployment.environment=test'
 
 # run the application
-splunk-py-trace flask run -p 8080
+opentelemetry-instrument flask run -p 8080
 ````
 
 ## Test the Application

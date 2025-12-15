@@ -5,7 +5,7 @@ from opentelemetry.instrumentation.langchain import LangchainInstrumentor
 
 app = Flask(__name__)
 LangchainInstrumentor().instrument()
-model = ChatOpenAI(model="gpt-3.5-turbo")
+model = ChatOpenAI(model="gpt-5-nano")
 
 @app.route("/askquestion", methods=['POST'])
 def ask_question():
