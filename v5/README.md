@@ -35,7 +35,7 @@ export OTEL_SERVICE_NAME=my-llm-app
 export OTEL_RESOURCE_ATTRIBUTES='deployment.environment=test'
 
 # now we can run the application that uses embeddings to answer questions 
-splunk-py-trace flask run -p 8080
+opentelemetry-instrument flask run -p 8080
 ````
 
 ## Test the Application

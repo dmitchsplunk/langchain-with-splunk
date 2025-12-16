@@ -6,13 +6,13 @@ from langchain_core.chat_history import (
 )
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_openai import OpenAIEmbeddings
-from langchain.vectorstores.chroma import Chroma
+from langchain_chroma import Chroma
 from flask import Flask, request
 from opentelemetry.instrumentation.langchain import LangchainInstrumentor
 
 app = Flask(__name__)
 LangchainInstrumentor().instrument()
-model = ChatGoogleGenerativeAI(model="gemini-1.5-pro-latest")
+model = ChatGoogleGenerativeAI(model="gemini-2.5-flash-lite")
 
 embeddings_model = OpenAIEmbeddings()
 
